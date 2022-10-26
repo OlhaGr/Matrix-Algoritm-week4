@@ -1,10 +1,9 @@
-let d = 0;
-let v = 1;
-let r = 0;
-while (d < 1000) {
-   d = v + r;
-   r = v;
-   v = d;
-   console.log(d)
-}
 
+let x=[];
+x[0]=0;
+x[1]=1;
+for( let i=2; i <10; i++){
+    x[i]=x[i-2]+x[i-1];
+    
+}
+console.log(x);
